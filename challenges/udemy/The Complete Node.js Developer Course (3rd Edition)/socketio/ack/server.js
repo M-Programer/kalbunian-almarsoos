@@ -1,0 +1,6 @@
+//...
+socket.on("sendLocation", (data, ack) => {
+	socket.send(`Latitude: ${data.latitude} Longitude: ${data.longitude}`)
+	ack()
+})
+//...

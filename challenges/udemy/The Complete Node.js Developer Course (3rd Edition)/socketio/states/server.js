@@ -1,0 +1,6 @@
+//...
+socket.on("sendLocation", (data, ack) => {
+	socket.send("getLocation", `https://google.com/maps?q=${data.latitude},${data.longitude}`)
+	ack()
+})
+//...

@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	color: white;
+	background-color: green;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 2px solid green;
+}
+
+button:hover {
+	color: green;
+	background-color: white;
+}
+
+a:link,
+a:visited {
+	color: green;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	padding: 3px;
+	padding-bottom: 0;
+	border-radius: 100%;
+	border: 2px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a:hover,
+a:active,
+a.active {
+	color: white;
+	background-color: green;
+	border: 2px solid green;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+body {
+	margin-top: 200px;
+	display: flex;
+	justify-content: center;
+}
