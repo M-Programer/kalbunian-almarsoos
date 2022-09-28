@@ -12,4 +12,5 @@ Checklist:
   - [x] [a cloud guru](https://acloud.guru/)
     - [x] clf
     - [x] ssa
-  - [ ] sst `in progress`
+  - [x] sst `in progress`
+  - [ ] portfolio
