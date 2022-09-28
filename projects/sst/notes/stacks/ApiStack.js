@@ -7,6 +7,7 @@ export function ApiStack({ stack, app }) {
 	// Create the API
 	const api = new Api(stack, "Api", {
 		defaults: {
+			memorySize: 128,
 			customDomain:
 				app.stage === "prod" ? "api.my-serverless-app.com" : undefined,
 			authorizer: "iam",
