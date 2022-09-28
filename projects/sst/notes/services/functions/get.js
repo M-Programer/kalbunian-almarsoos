@@ -1,9 +1,7 @@
 import handler from "../util/handler";
 import dynamoDb from "../util/dynamodb";
 
-// Some faulty code
-dynamoDb.notExist();
-
+// Wrong handler function name
 export const main = handler(async (event) => {
 	const params = {
 		TableName: process.env.tableName,
@@ -16,7 +14,7 @@ export const main = handler(async (event) => {
 		},
 	};
 
-	const result = await dynamoDb.get(params);
+	const result = await dynamoDbLib.call("get", params);
 	if (!result.Item) {
 		throw new Error("Item not found.");
 	}
