@@ -1,3 +1,4 @@
+import ErrorBoundary from "./components/ErrorBoundary";
 import { onError } from "./lib/errorLib";
 import { AppContext } from "./lib/contextLib";
 import { LinkContainer } from "react-router-bootstrap";
@@ -67,9 +68,11 @@ function App() {
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-				<AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
-					<Routes />
-				</AppContext.Provider>
+				<ErrorBoundary>
+					<AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+						<Routes />
+					</AppContext.Provider>
+				</ErrorBoundary>
 			</div>
 		)
 	);
