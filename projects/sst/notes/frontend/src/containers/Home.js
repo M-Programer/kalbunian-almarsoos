@@ -1,3 +1,4 @@
+import Notes from "./containers/Notes";
 import { BsPencilSquare } from "react-icons/bs";
 import { LinkContainer } from "react-router-bootstrap";
 import React, { useState, useEffect } from "react";
