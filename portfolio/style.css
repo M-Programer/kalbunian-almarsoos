@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+	font-family: monospace;
+}
+
+svg {
+	width:  50px;
+	height: 50px;
+	fill: black;
+	background-color: white;
+	transition: 100ms;
+}
+
+svg:hover {
+	width:  60px;
+	height: 60px;
+	transition: 100ms;
+}
+
+.hero > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 25px;
+	align-items: center;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 999999999;
+	background-color: black;
+	color: white;
+	width: 100vw;
+	padding: 10px 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+}
+
+header nav ul {
+	width: 90%;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a:link, a:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.contact-icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+
+div.nav {
+	height: 100px;
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 25px;
+	gap: 100px;
+}
+
+.hero > div > span {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+.skills ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	gap: 70px;
+}
+
+.skills li {
+	color: white;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+li.skill1 {
+	background-color: orangered;
+}
+
+li.skill2 {
+	background-color: blue;
+}
+
+li.skill3 {
+	background-color: yellow;
+	color: black;
+}
+
+li.skill4 {
+	background-color: green;
+}
+
+li.skill5 {
+	background-color: darkblue;
+	color: yellow;
+}
