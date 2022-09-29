@@ -139,3 +139,14 @@ li.skill6 {
 	background-color: aqua;
 	color: black;
 }
+
+.cv a:link,
+.cv a:visited {
+	color: blue;
+	text-decoration: underline;
+}
+
+.cv a:hover,
+.cv a:active {
+	color: black;
+}
