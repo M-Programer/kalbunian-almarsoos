@@ -13,4 +13,4 @@ Checklist:
     - [x] clf
     - [x] ssa
   - [x] sst
-  - [ ] portfolio
+  - [x] portfolio
